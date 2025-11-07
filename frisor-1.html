@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Klipp &amp; Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo"><a href="hem.html"><img src="assets/scissors-logo.svg" alt="Salon de Beauté logo" class="logo-img">Salon de Beauté</a></h1>
+      </div>
+    </header>
+
+    <nav class="sub-nav" aria-label="Primary">
+      <div class="container">
+        <a href="hem.html">Hem</a>
+        <div class="nav-item has-submenu" aria-haspopup="true">
+          <a href="frisor.html" class="nav-link active" aria-current="page">Frisör</a>
+          <ul class="dropdown-menu" role="menu" aria-label="Frisör meny">
+            <li role="none"><a role="menuitem" href="frisor-1.html">Klipp &amp; Form</a></li>
+            <li role="none"><a role="menuitem" href="frisor-2.html">Färg &amp; toning</a></li>
+            <li role="none"><a role="menuitem" href="frisor-3.html">Styling &amp; Brud</a></li>
+          </ul>
+        </div>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="tel:+46123456789" class="nav-phone">012-345 6789</a>
+      </div>
+    </nav>
+
+    <div class="header-banner" role="img" aria-label="Salongens interiör">
+      <img src="assets/real2.png" alt="Salongens interiör" class="banner-img">
+    </div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <h2>Klipp &amp; Form</h2>
+          <p>Det här är den första undersidan i Frisör avdelningen. Liten beskrivning av tjänst eller innehåll.</p>
+        </div>
+      </section>
+      <!-- reviews sidebar (sticky on the right) -->
+      <aside class="reviews-sidebar" aria-label="Kundrecensioner">
+        <div class="review-card">
+            <div class="review-header">
+            <div class="review-avatar">JS</div>
+            <div class="review-meta"><strong>John S</strong><div class="stars">★★★★★</div></div>
+          </div>
+    <blockquote>"Fantastisk service och proffsig styling, jag blev mycket nöjd med resultatet."</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">SM</div>
+            <div class="review-meta"><strong>Sarah M</strong><div class="stars">★★★★★</div></div>
+          </div>
+          <blockquote>"Vänlig personal, bra råd och härliga produkter. Rekommenderas varmt!"</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">DL</div>
+            <div class="review-meta"><strong>David L.</strong><div class="stars">★★★★★</div></div>
+          </div>
+    <blockquote>"Alltid ett toppenresultat, professionellt och personligt bemötande."</blockquote>
+        </div>
+      </aside>
+
+      <section class="container">
+        <nav class="local-nav" aria-label="Lokal navigering Frisör">
+          <ul>
+            <li><a href="frisor-1.html" class="active">Klipp &amp; Form</a></li>
+            <li><a href="frisor-2.html">Färg &amp; toning</a></li>
+            <li><a href="frisor-3.html">Styling &amp; Brud</a></li>
+          </ul>
+        </nav>
+
+        <article class="about">
+          <h3>Klipp &amp; Form</h3>
+          <p>En bra klippning handlar inte bara om längd, utan också om form, balans och rörelse i håret. Genom att anpassa klipptekniken efter kundens hårtyp och ansiktsform kan frisören framhäva personliga drag och skapa en stil som känns både naturlig och lätt att underhålla.</p>
+
+          <h4>Konsultation</h4>
+          <p>Varje behandling inleds med en noggrann konsultation. Här går frisören igenom kundens önskemål, hårkvalitet och livsstil för att kunna rekommendera en passande frisyr och form.</p>
+
+          <h4>Klipptekniker</h4>
+          <p>Det finns många olika tekniker inom klippning  från klassisk precisionsteknik till moderna texturmetoder. Genom att kombinera olika tekniker skapas en unik look som passar individen.</p>
+
+          <h4>Styling och vård</h4>
+          <p>Efter klippningen formas håret med produkter som framhäver resultatet. Kunden får även tips på hur frisyren kan stylas hemma och vilka produkter som passar bäst för att behålla formen mellan besöken.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-bar" role="region" aria-label="Footer information">
+        <div class="container footer-columns">
+            <div class="footer-col">
+              <h4>Öppettider</h4>
+              <ul class="hours">
+                <li>Måndag-Fredag: 8:00-18:00</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Kontakt</h4>
+              <p>Salon de Beauté<br>Storgatan 12<br>111 22 Stad</p>
+            </div>
+            <div class="footer-col">
+              <h4>Rapport</h4>
+              <p><a href="rapport.pdf" class="rapport-link" target="_blank" rel="noopener">Rapport inlämning</a></p>
+            </div>
+            <div class="footer-col">
+              <h4>Följ oss</h4>
+              <p>tagga #salondebeaute</p>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <!-- Mobile-only reviews toggle (CSS-only) -->
+    <a href="#mobile-reviews" class="reviews-toggle" aria-hidden="false">Recensioner</a>
+
+    <aside id="mobile-reviews" class="mobile-reviews-drawer" role="dialog" aria-label="Kundrecensioner">
+    <a href="#" class="mobile-reviews-close" aria-label="Stäng recensioner">✕</a>
+      <div class="reviews-drawer-inner">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">JS</div>
+            <div class="review-meta"><strong>John S</strong><div class="stars">★★★★★</div></div>
+          </div>
+          <blockquote>"Fantastisk service och proffsig styling, jag blev mycket nöjd med resultatet."</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">SM</div>
+            <div class="review-meta"><strong>Sarah M</strong><div class="stars">★★★★★</div></div>
+          </div>
+          <blockquote>"Vänlig personal, bra råd och härliga produkter. Rekommenderas varmt!"</blockquote>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">DL</div>
+            <div class="review-meta"><strong>David L.</strong><div class="stars">★★★★★</div></div>
+          </div>
+          <blockquote>"Alltid ett toppenresultat, professionellt och personligt bemötande."</blockquote>
+        </div>
+      </div>
+    </aside>
+
+    </body>
+  </html>

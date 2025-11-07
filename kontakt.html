@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt - Salon de Beauté</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container">
+  <h1 class="logo"><a href="hem.html"><img src="assets/scissors-logo.svg" alt="Salon de Beauté logo" class="logo-img">Salon de Beauté</a></h1>
+    </div>
+  </header>
+
+  <nav class="sub-nav" aria-label="Primary">
+    <div class="container">
+      <a href="hem.html">Hem</a>
+      <div class="nav-item has-submenu" aria-haspopup="true">
+        <a href="frisor.html" class="nav-link">Frisör</a>
+        <ul class="dropdown-menu" role="menu" aria-label="Frisör meny">
+          <li role="none"><a role="menuitem" href="frisor-1.html">Klipp &amp; Form</a></li>
+          <li role="none"><a role="menuitem" href="frisor-2.html">Färg &amp; toning</a></li>
+          <li role="none"><a role="menuitem" href="frisor-3.html">Styling &amp; Brud</a></li>
+        </ul>
+      </div>
+      <a href="kontakt.html" class="active" aria-current="page">Kontakt</a>
+      <a href="tel:+46123456789" class="nav-phone">012-345 6789</a>
+    </div>
+  </nav>
+  
+  <!-- header banner using user-provided image (caption removed) -->
+  <div class="header-banner" role="img" aria-label="Salongens interiör">
+    <img src="assets/real2.png" alt="Salongens interiör" class="banner-img">
+  </div>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h2>Kontakt</h2>
+  <p>Här hittar du kontaktuppgifter och ett enkelt bokningsformulär.</p>
+      </div>
+    </section>
+
+    <section class="contact-hero container">
+      <div class="contact-info">
+    <h2>Vi ser fram emot att träffa dig</h2>
+  <hr aria-hidden="true" class="hr-decor">
+    <p>Det finns många anledningar att välja oss. Vår personal är redo att hjälpa dig med rätt behandling och produkter. Du är alltid välkommen att titta in till oss eller höra av dig om du har frågor.</p>
+
+          <ul class="contact-list">
+            <li><strong>Adress</strong><br>Storgatan 12, 111 22 Stad</li>
+            <li><strong>E-post</strong><br><a href="mailto:salondebeaute@gmail.com">salondebeaute@gmail.com</a></li>
+            <li><strong>Telefon</strong><br><a href="tel:0123456789">012-345 6789</a></li>
+            <li><strong>Öppettider</strong><br>Måndag-Fredag: 8:00-18:00</li>
+          </ul>
+      
+        <!-- Contact form with varied input types (no backend) -->
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input id="name" name="name" type="text" placeholder="Ditt namn">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input id="email" name="email" type="email" placeholder="mejlen@exempel.se">
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telefon</label>
+            <input id="tel" name="tel" type="tel" placeholder="070-123 45 67">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Välj tjänst</label>
+            <select id="service" name="service">
+              <option value="">Välj...</option>
+              <option value="klippning">Klippning</option>
+              <option value="farg">Färg</option>
+              <option value="styling">Styling</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="day">Välj dag (denna vecka)</label>
+            <select id="day" name="day">
+              <option value="">Välj dag...</option>
+              <option value="mandag">Måndag</option>
+              <option value="tisdag">Tisdag</option>
+              <option value="onsdag">Onsdag</option>
+              <option value="torsdag">Torsdag</option>
+              <option value="fredag">Fredag</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Välj tid</label>
+            <select id="time" name="time">
+              <option value="">Välj tid...</option>
+              <option>08:00</option>
+              <option>09:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              
+            </select>
+          </div>
+
+           
+
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="4" placeholder="Beskriv vad du vill ha"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Skicka</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="map-wrapper" aria-hidden="false">
+        <!-- Google Maps embed using the provided address -->
+        <iframe
+          title="Salon de Beauté location"
+          src="https://www.google.com/maps?q=59.335000%2C18.083333&z=17&output=embed"
+          width="100%" height="100%"
+          loading="eager" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- reviews sidebar (sticky on the right) -->
+    <aside class="reviews-sidebar" aria-label="Kundrecensioner">
+      <div class="review-card">
+          <div class="review-header">
+          <div class="review-avatar">JS</div>
+          <div class="review-meta"><strong>John S</strong><div class="stars">★★★★★</div></div>
+        </div>
+  <blockquote>"Fantastisk service och proffsig styling, jag blev mycket nöjd med resultatet."</blockquote>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">SM</div>
+          <div class="review-meta"><strong>Sarah M</strong><div class="stars">★★★★★</div></div>
+        </div>
+        <blockquote>"Vänlig personal, bra råd och härliga produkter. Rekommenderas varmt!"</blockquote>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">DL</div>
+          <div class="review-meta"><strong>David L.</strong><div class="stars">★★★★★</div></div>
+        </div>
+  <blockquote>"Alltid ett toppenresultat, professionellt och personligt bemötande."</blockquote>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bar" role="region" aria-label="Footer information">
+      <div class="container footer-columns">
+        <div class="footer-col">
+          <h4>Öppettider</h4>
+          <ul class="hours">
+            <li>Måndag-Fredag: 8:00-18:00</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <p>Salon de Beauté<br>Storgatan 12<br>111 22 Stad</p>
+          <p><a href="tel:0123456789">012-345 6789</a><br><a href="mailto:salondebeaute@gmail.com">salondebeaute@gmail.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Rapport</h4>
+          <p><a href="rapport.pdf" class="rapport-link" target="_blank" rel="noopener">Rapport inlämning</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Följ oss</h4>
+          <p>Visa din bästa stund hos oss<br>tagga #salondebeaute</p>
+          <!-- social icon removed as requested -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p>© 2025 Salon de Beauté</p>
+    </div>
+  </footer>
+
+  <!-- Mobile-only reviews toggle (CSS-only) -->
+  <a href="#mobile-reviews" class="reviews-toggle" aria-hidden="false">Recensioner</a>
+
+  <aside id="mobile-reviews" class="mobile-reviews-drawer" role="dialog" aria-label="Kundrecensioner">
+  <a href="#" class="mobile-reviews-close" aria-label="Stäng recensioner">✕</a>
+    <div class="reviews-drawer-inner">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">JS</div>
+          <div class="review-meta"><strong>John S</strong><div class="stars">★★★★★</div></div>
+        </div>
+        <blockquote>"Fantastisk service och proffsig styling, jag blev mycket nöjd med resultatet."</blockquote>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">SM</div>
+          <div class="review-meta"><strong>Sarah M</strong><div class="stars">★★★★★</div></div>
+        </div>
+        <blockquote>"Vänlig personal, bra råd och härliga produkter. Rekommenderas varmt!"</blockquote>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">DL</div>
+          <div class="review-meta"><strong>David L.</strong><div class="stars">★★★★★</div></div>
+        </div>
+        <blockquote>"Alltid ett toppenresultat, professionellt och personligt bemötande."</blockquote>
+      </div>
+    </div>
+  </aside>
+
+  
+  
+
+</body>
+</html>
